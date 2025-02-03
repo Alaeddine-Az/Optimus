@@ -3,58 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Get in touch with Optimus for digital transformation consulting.">
+  <meta name="description" content="Contact Optimus for expert digital transformation consulting and innovative technology solutions.">
   <title>Contact - Optimus</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <!-- PAGE HEADER -->
+  <!-- Navigation Menu -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
   <header class="page-header">
     <div class="container">
       <h1>Contact Us</h1>
     </div>
   </header>
 
-  <!-- CONTACT FORM SECTION -->
-  <section id="contact-form">
-    <div class="container">
-      <form action="submit_form.php" method="POST">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your message" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="container">
+    <form action="submit_form.php" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
 
-  <!-- MAP INTEGRATION -->
-  <section id="map">
-    <div class="container">
-      <!-- Replace the src URL with your own Google Maps embed link -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!...etc" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+  <!-- Google Map Section (Optional) -->
+  <section id="map" class="container">
+    <!-- Replace the src URL with your own Google Maps embed link if needed -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.808674789645!2d-122.08385168469157!3d37.38605197983298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb6b52a56f4d9%3A0x28e3a89b5f7e7c0!2sGoogleplex!5e0!3m2!1sen!2sus!4v157234567890!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Optimus. All rights reserved.</p>
-      <ul class="social-links">
-        <li><a href="#" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn"></a></li>
-        <li><a href="#" aria-label="Twitter"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
-        <li><a href="#" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
-      </ul>
-    </div>
+  <!-- Footer -->
+  <footer class="container">
+    <p>&copy; 2025 Optimus. All rights reserved.</p>
+    <ul class="social-links">
+      <li><a href="#" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn"></a></li>
+      <li><a href="#" aria-label="Twitter"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
+      <li><a href="#" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
+    </ul>
   </footer>
 </body>
 </html>
