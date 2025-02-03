@@ -1,3 +1,67 @@
+/* ------------------------------------------
+   Advanced Animations and Effects
+--------------------------------------------- */
+
+/* Hero Content Animation on Load */
+.animate-on-load {
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+  /* Delay to ensure the hero background is in place */
+  animation-delay: 0.3s;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll-Reveal Animation */
+/* Elements with the "animate-on-scroll" class will start invisible */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When "animate" class is added by JavaScript, reveal the element */
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Background: Subtle Zoom-Out Parallax Effect */
+#hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  background: url('../images/hero-bg.jpg') center center/cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%; /* slightly larger for zoom effect */
+  height: 110%;
+  filter: brightness(0.6);
+  z-index: -1;
+  animation: zoomOut 10s ease-out forwards;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* (Other CSS styles remain unchanged) */
 /* Reset and Global Styles */
 * {
   margin: 0;
