@@ -1,37 +1,4 @@
 /* Reset and Global Styles */
-
-/* Navigation Menu Styling */
-.main-nav {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6); /* semi-transparent background */
-  z-index: 10;
-}
-
-.main-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 15px 30px;
-}
-
-.main-nav ul li {
-  margin-left: 20px;
-}
-
-.main-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.main-nav ul li a:hover {
-  color: #ffd700; /* changes color on hover for better visibility */
-}
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +19,45 @@ body {
   padding: 20px 0;
 }
 
+/* Navigation Menu Styling */
+.main-nav {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 15px;
+}
+
+.main-nav ul li {
+  margin-left: 20px;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+  color: #ffd700;
+}
+
 /* HERO SECTION */
 header#hero {
   position: relative;
@@ -61,6 +67,7 @@ header#hero {
   justify-content: center;
   color: #fff;
   text-align: center;
+  padding-top: 60px; /* to account for fixed nav */
   overflow: hidden;
 }
 
@@ -71,12 +78,11 @@ header#hero {
   left: 0;
   width: 100%;
   height: 100%;
-  filter: brightness(0.7);
+  filter: brightness(0.6);
+  z-index: -1;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
   animation: fadeIn 1s ease-in;
 }
 
@@ -144,8 +150,81 @@ header#hero {
 .page-header {
   background: #007BFF;
   color: #fff;
-  padding: 40px 0;
+  padding: 60px 0 40px;
   text-align: center;
+  margin-top: 60px; /* to account for fixed nav */
+}
+
+/* Case Studies Before/After */
+.before-after {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.before,
+.after {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.before img,
+.after img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Blog Posts */
+.blog-post {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.blog-post img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.blog-post h2 a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.blog-post h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
 }
 
 /* Footer Styling */
@@ -173,6 +252,10 @@ footer {
 @media (max-width: 768px) {
   header#hero {
     height: 70vh;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
