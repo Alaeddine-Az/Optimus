@@ -1,28 +1,3 @@
-<header id="hero">
-  <!-- Navigation Menu -->
-  <nav class="main-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="case-studies.html">Case Studies</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section Background -->
-  <div class="hero-background">
-    <!-- Background image set via CSS -->
-  </div>
-
-  <!-- Hero Content -->
-  <div class="hero-content">
-    <h1>Empowering Businesses for the Digital Future</h1>
-    <p>At Optimus, we transform your business with cutting-edge digital solutions.</p>
-    <a href="contact.html" class="btn">Book a Free Consultation</a>
-  </div>
-</header>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,8 +13,8 @@
     "@context": "http://schema.org",
     "@type": "Organization",
     "name": "Optimus",
-    "url": "http://www.optimus.com",
-    "logo": "http://www.optimus.com/images/logo.png",
+    "url": "https://yourusername.github.io/optimus-website",
+    "logo": "https://yourusername.github.io/optimus-website/images/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+1-800-OPTIMUS",
@@ -49,80 +24,80 @@
   </script>
 </head>
 <body>
+  <!-- Navigation Menu -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- HERO SECTION -->
   <header id="hero">
-    <div class="hero-background">
-      <!-- The background image (e.g., a digital grid or futuristic cityscape) is set via CSS -->
-    </div>
-    <div class="hero-content">
+    <div class="hero-background"></div>
+    <div class="hero-content container">
       <h1>Empowering Businesses for the Digital Future</h1>
-      <p>At Optimus, we transform your business with cutting-edge digital solutions.</p>
+      <p>At Optimus, we transform your business with cutting-edge digital solutions designed to drive growth and innovation.</p>
       <a href="contact.html" class="btn">Book a Free Consultation</a>
     </div>
   </header>
 
-  <!-- EXPERTISE SECTION -->
-  <section id="expertise">
-    <div class="container">
-      <h2>Our Expertise</h2>
-      <div class="expertise-grid">
-        <div class="expertise-item">
-          <img src="images/digital-transformation-icon.png" alt="Digital Transformation">
-          <h3>Digital Transformation</h3>
-          <p>Modernizing your business for the digital age.</p>
-        </div>
-        <div class="expertise-item">
-          <img src="images/ai-integration-icon.png" alt="AI Integration">
-          <h3>AI Integration</h3>
-          <p>Integrate AI to streamline operations and enhance decision-making.</p>
-        </div>
-        <div class="expertise-item">
-          <img src="images/process-automation-icon.png" alt="Process Automation">
-          <h3>Process Automation</h3>
-          <p>Automate processes for efficiency and scalability.</p>
-        </div>
-        <div class="expertise-item">
-          <img src="images/cloud-solutions-icon.png" alt="Cloud Solutions">
-          <h3>Cloud Solutions</h3>
-          <p>Robust cloud infrastructure for modern businesses.</p>
-        </div>
+  <!-- Expertise Section -->
+  <section id="expertise" class="container">
+    <h2>Our Expertise</h2>
+    <div class="expertise-grid">
+      <div class="expertise-item">
+        <img src="images/digital-transformation-icon.png" alt="Digital Transformation">
+        <h3>Digital Transformation</h3>
+        <p>Modernizing your business operations for a digital era.</p>
+      </div>
+      <div class="expertise-item">
+        <img src="images/ai-integration-icon.png" alt="AI Integration">
+        <h3>AI Integration</h3>
+        <p>Leverage AI to enhance decision-making and efficiency.</p>
+      </div>
+      <div class="expertise-item">
+        <img src="images/process-automation-icon.png" alt="Process Automation">
+        <h3>Process Automation</h3>
+        <p>Streamline operations with intelligent automation.</p>
+      </div>
+      <div class="expertise-item">
+        <img src="images/cloud-solutions-icon.png" alt="Cloud Solutions">
+        <h3>Cloud Solutions</h3>
+        <p>Deploy secure and scalable cloud infrastructures.</p>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS SECTION -->
-  <section id="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonials-slider">
-        <div class="testimonial">
-          <p>"Optimus completely transformed our digital operations."</p>
-          <h4>Jane Doe, CEO of TechCorp</h4>
-        </div>
-        <div class="testimonial">
-          <p>"Their expertise in AI integration is unmatched."</p>
-          <h4>John Smith, CTO of Innovate Inc.</h4>
-        </div>
-        <!-- Additional testimonials can be added here -->
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-slider">
+      <div class="testimonial">
+        <p>"Optimus helped us reimagine our business. Their digital solutions truly transformed our operations."</p>
+        <h4>Jane Doe, CEO of TechCorp</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The team's expertise in AI and automation is unparalleled. Our efficiency has soared."</p>
+        <h4>John Smith, CTO of Innovate Inc.</h4>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Optimus. All rights reserved.</p>
-      <ul class="social-links">
-        <li><a href="#" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn"></a></li>
-        <li><a href="#" aria-label="Twitter"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
-        <li><a href="#" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
-      </ul>
-    </div>
+  <!-- Footer -->
+  <footer class="container">
+    <p>&copy; 2025 Optimus. All rights reserved.</p>
+    <ul class="social-links">
+      <li><a href="#" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn"></a></li>
+      <li><a href="#" aria-label="Twitter"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
+      <li><a href="#" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
+    </ul>
   </footer>
-
-  <!-- Chatbot Integration (Optional) -->
-  <div id="chatbot">
-    <!-- Third-party chatbot script can be integrated here -->
-  </div>
 </body>
 </html>
